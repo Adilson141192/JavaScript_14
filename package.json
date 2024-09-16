@@ -1,0 +1,12 @@
+{
+  "name": "javascript_14",
+  "version": "1.0.0",
+  "description": "Curso de JS da Alura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
