@@ -50,11 +50,11 @@ const api = {
       const response = await axios.delete(`${URL_BASE}/pensamentos/${id}`)
     }
     catch {
-      alert('Erro ao excluir pensamento')
+      alert('Erro ao excluir um pensamento')
       throw error
     }
-  },
-
+  }
+  
 }
 
 export default api

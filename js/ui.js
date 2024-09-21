@@ -25,7 +25,7 @@ const ui = {
       } else {
         mensagemVazia.style.display = "none"
         pensamentos.forEach(ui.adicionarPensamentoNaLista)
-      }
+      } 
     }
     catch {
       alert('Erro ao renderizar pensamentos')
@@ -53,7 +53,7 @@ const ui = {
 
     const botaoEditar = document.createElement("button")
     botaoEditar.classList.add("botao-editar")
-    botaoEditar.onclick = () => ui.preencherFormulario(pensamentoId)
+    botaoEditar.onclick = () => ui.preencherFormulario(pensamento.id)
 
     const iconeEditar = document.createElement("img")
     iconeEditar.src = "assets/imagens/icone-editar.png"
@@ -67,14 +67,14 @@ const ui = {
         await api.excluirPensamento(pensamento.id)
         ui.renderizarPensamentos()
       } catch (error) {
-        alert("Erro ao excluir pensamento")
+        alert("Erro ao excluir pensamnto")
       }
     }
 
     const iconeExcluir = document.createElement("img")
     iconeExcluir.src = "assets/imagens/icone-excluir.png"
     iconeExcluir.alt = "Excluir"
-    botaoEditar.appendChild(iconeExcluir)
+    botaoExcluir.appendChild(iconeExcluir)
 
     const icones = document.createElement("div")
     icones.classList.add("icones")
